@@ -4,4 +4,5 @@
 1D: 4
 
 2A: None.
-2B: 
+2B: 1. git add hw1q2b.cpp 2. git log
+2C: It will commit all three files as a group and prepare them all to be published.
