@@ -30,8 +30,12 @@ void perm_helper(char *src_chars, char* buf, int curr)
   else {
     int len = strlen(src_chars);
     for(int i=0; i < len; i++){
+      //This line was the only line necessary to fix the code
+      if(strchr(buf,src_chars[i])==NULL)
+      {
       buf[curr] = src_chars[i];
       perm_helper(src_chars, buf, curr+1);
+      }
       buf[curr] = ' ';
     }
   }
